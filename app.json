@@ -3,12 +3,24 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "subPackages": [
+    {
+      "root": "subPages/other/pages/",
+      "pages": [
+        "web/web"
+      ],
+      "independent": true
+    }
+  ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "鸿城服务",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+  "navigateToMiniProgramAppIdList": [
+    "wx1aba4b8e5e2c0947",
+    "wx75558357e98c7d79"
+  ],
   "sitemapLocation": "sitemap.json"
 }

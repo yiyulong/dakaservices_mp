@@ -1,0 +1,22 @@
+{
+  "name": "dakaservices_mp",
+  "version": "1.0.0",
+  "description": "鸿城物业服务",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiyulong/dakaservices_mp.git"
+  },
+  "author": "yiyulong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiyulong/dakaservices_mp/issues"
+  },
+  "homepage": "https://github.com/yiyulong/dakaservices_mp#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.2.2"
+  }
+}

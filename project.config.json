@@ -11,6 +11,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": false,
@@ -20,7 +21,7 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"nodeModules": true
+		"useCompilerModule": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
@@ -41,13 +42,28 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "subPages/other/pages/web/web",
+					"pathName": "subPages/other/pages/web/web",
+					"scene": null
+				}
+			]
 		}
 	}
 }
