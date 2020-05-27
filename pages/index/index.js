@@ -8,7 +8,16 @@ Page({
     // userInfo: {},
     // hasUserInfo: false,
     // canIUse: wx.canIUse('button.open-type.getUserInfo')
-    banner: ['../../images/banner.jpg']
+    banner: [{
+      src: '../../images/banner.jpg',
+      url: {
+        appId: 'wx1aba4b8e5e2c0947',
+        path: ''
+      }
+      }, {
+        src: '../../images/banner2.jpg',
+        url: ''
+    }]
   },
   //事件处理函数
   // bindViewTap: function() {
@@ -80,12 +89,42 @@ Page({
   _toDKZS () {
     wx.navigateToMiniProgram({
       appId: 'wx75558357e98c7d79',
-      path: '/pages/index/index',
+      path: '/pages/index',
       envVersion: 'release',
       success(res) {
         console.log('navigateToMiniProgram success');
       }
     })
+  },
+  _toWEB ({ currentTarget: { dataset: { url } } }) {
+    // console.log(url)
+    if (/^(https|http)/.test(url)) {
+      wx.navigateTo({ url: `/subPages/other/pages/web/web?url=${url}`})
+    } else {
+      wx.navigateTo({ url })
+    }
+  },
+  _jump ( { currentTarget: { dataset: { url } } }) {
+    if (!url) return
+    if (typeof (url) === 'string') {
+      if (/^(https|http)/.test(url)) {
+        wx.navigateTo({ url: `/subPages/other/pages/web/web?url=${url}`})
+      } else {
+        wx.navigateTo({ url })
+      }
+    }
+    if (typeof (url) === 'object') {
+      if ('appId' in url) {
+        wx.navigateToMiniProgram({
+          appId: url.appId,
+          path: url?.path ?? '',
+          envVersion: 'release',
+          success(res) {
+            console.log('navigateToMiniProgram success');
+          }
+        })
+      }
+    }
   },
   _wait () {
     wx.showModal({

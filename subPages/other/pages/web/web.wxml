@@ -1,1 +1,1 @@
-<web-view bindmessage='getH5Message' src="https://dksx.dingliantech.com/daix_miniprogram_h5/service/jump.html" />
+<web-view bindmessage='getH5Message' src="{{ url }}" />

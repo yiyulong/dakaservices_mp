@@ -17,8 +17,8 @@
   <swiper indicator-dots autoplay circular indicator-active-color="#3695e3">
     <block wx:for="{{ banner }}" wx:key="index">
       <swiper-item>
-        <view class="swiper-item" data-index="{{ index }}" bind:tap="_toDKSX">
-          <image src="{{item}}" mode="aspectFill" />
+        <view class="swiper-item" data-url="{{ item.url }}" bind:tap="_jump">
+          <image src="{{ item.src }}" mode="aspectFill" />
         </view>
       </swiper-item>
     </block>
@@ -86,14 +86,14 @@
 </view>
 <view class="service-box">
   <view class="title">业主专属服务</view>
-  <view class="content-box" bind:tap="_wait">
-    <view class="row-item">
+  <view class="content-box">
+    <view class="row-item" data-url="https://dksx.dingliantech.com/hongchengfuwu_miniprogram_h5/shetuanzhaomu/index.html" bind:tap="_toWEB">
       <image src="../../images/activity_01.jpg" mode="widthFix" />
     </view>
-    <view class="row-item">
+    <view class="row-item" data-url="https://dksx.dingliantech.com/hongchengfuwu_miniprogram_h5/shequhuodong/index.html" bind:tap="_toWEB">
       <image src="../../images/activity_02.jpg" mode="widthFix" />
     </view>
-    <view class="row-item">
+    <view class="row-item" data-url="https://dksx.dingliantech.com/hongchengfuwu_miniprogram_h5/tiaozaoshichang/index.html" bind:tap="_toWEB">
       <image src="../../images/activity_03.jpg" mode="widthFix" />
     </view>
   </view>
