@@ -69,16 +69,16 @@
       <view class="col-item" bind:tap="_toDKZS">
         <image src="../../images/fangchanjingji.jpg" mode="widthFix" />
       </view>
-      <view class="col-item" bind:tap="_wait">
+      <view class="col-item" bind:tap="_contact">
         <image src="../../images/quanwuzhuangxiu.jpg" mode="widthFix" />
       </view>
-      <view class="col-item" bind:tap="_wait">
+      <view class="col-item" bind:tap="_contact">
         <image src="../../images/shenghuofuwu.jpg" mode="widthFix" />
       </view>
-      <view class="col-item" bind:tap="_wait">
+      <view class="col-item" bind:tap="_contact">
         <image src="../../images/shequjinrong.jpg" mode="widthFix" />
       </view>
-      <view class="col-item" bind:tap="_wait">
+      <view class="col-item" bind:tap="_contact">
         <image src="../../images/jujiayanglao.jpg" mode="widthFix" />
       </view>
     </view>
